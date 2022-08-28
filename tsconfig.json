@@ -10,7 +10,7 @@
       ]
     },
     "typeRoots": [
-      "types"
+      "types","node_modules/@types"
     ],
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
