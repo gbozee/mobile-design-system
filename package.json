@@ -34,6 +34,7 @@
     "bootstrap": "yarn example && yarn && yarn example pods",
     "storybook": "start-storybook -p 6006 --ci",
     "build-storybook": "build-storybook",
+    "build:prod": "build-storybook -s public",
     "precombine:reports": "npm run copy:reports && mkdir .nyc_output || true",
     "combine:reports": "npx nyc merge reports && mv coverage.json .nyc_output/out.json",
     "prereport:combined": "npm run combine:reports",
