@@ -1,0 +1,12 @@
+{
+  "extends": "../tsconfig",
+  "compilerOptions": {
+    // Avoid expo-cli auto-generating a tsconfig
+    "paths": {
+      "@tuteria/mobile-components": [
+        "../src/index"
+      ],
+    }
+  },
+  "jsx": "react"
+}

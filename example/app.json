@@ -1,0 +1,23 @@
+{
+  "name": "@tuteria/mobile-components-example",
+  "displayName": "MobileComponents Example",
+  "expo": {
+    "name": "@tuteria/mobile-components-example",
+    "slug": "tuteria-mobile-components-example",
+    "description": "Example app for @tuteria/mobile-components",
+    "privacy": "public",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "jsEngine": "hermes",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}

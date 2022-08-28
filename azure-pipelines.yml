@@ -1,0 +1,43 @@
+# Node.js
+# Build a general Node.js project with npm.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
+
+trigger:
+  - develop
+  - master
+  # - feature/*
+  # - bug/*
+
+resources:
+  # - repo: self
+  repositories:
+    - repository: templates
+      type: git
+      name: FutureSchool/fs-deploy-library
+      ref: refs/heads/master
+
+pool:
+  vmImage: ubuntu-latest
+
+stages:
+  - template: azure-templates/build-stage.yml@templates
+    parameters:
+      stage_name: Build_and_run_tests
+      stage_description: Build and component tests
+      with_test: true
+      is_docker: false
+      language: javascript
+  
+  - template: azure-templates/code-analysis.yml@templates
+    parameters:
+      stage_description: Analyze code
+      short_name: "tuteria/v3/tuteria/tuteria-backend-test"
+      tag: latest
+      with_test: true
+      language: typescript
+      deploy_docker_image: false
+      test_container: api-ci
+      sonar_project_key: "FutureSchoolHQ_fs-mobile-component-library"
+      sonar_project_name: "fs-mobile-component-library"
+

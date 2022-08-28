@@ -1,0 +1,37 @@
+{
+  "name": "@tuteria/mobile-components-example",
+  "description": "Example app for @tuteria/mobile-components",
+  "version": "0.0.1",
+  "private": true,
+  "main": "index",
+  "scripts": {
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "start": "expo start",
+    "test:e2e": "cypress run --component"
+  },
+  "dependencies": {
+    "@expo-google-fonts/inter": "^0.2.2",
+    "expo": "^45.0.0",
+    "expo-app-loading": "^2.1.0",
+    "expo-font": "~10.1.0",
+    "expo-linear-gradient": "~11.3.0",
+    "expo-splash-screen": "~0.15.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-native": "0.68.2",
+    "react-native-web": "0.17.7"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/runtime": "^7.9.6",
+    "@cypress/webpack-dev-server": "^2.0.0",
+    "axe-core": "^4.4.3",
+    "babel-loader": "^8.2.5",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "babel-preset-expo": "~9.1.0",
+    "expo-cli": "^5.4.11",
+    "webpack-dev-server": "^4.9.3"
+  }
+}
