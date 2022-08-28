@@ -1,1 +1,1 @@
-import * from './page'
+export * from './page';

@@ -9,6 +9,9 @@
         "./types/emotion.d.ts",
       ]
     },
+    "typeRoots": [
+      "types"
+    ],
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
     "esModuleInterop": true,

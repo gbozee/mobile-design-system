@@ -28,7 +28,7 @@
     "test:ci": "start-server-and-test storybook http://localhost:6006 cy:run",
     "typescript": "tsc --noEmit --skipLibCheck",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
-    "prepare": "bob build",
+    "x:prepare": "bob build",
     "release": "release-it",
     "example": "yarn --cwd example",
     "bootstrap": "yarn example && yarn && yarn example pods",
@@ -58,7 +58,6 @@
     "@arkweid/lefthook": "^0.7.7",
     "@babel/core": "^7.18.9",
     "@babel/eslint-parser": "^7.18.2",
-    "@commitlint/config-conventional": "^17.0.2",
     "@emotion/jest": "^11.6.0",
     "@emotion/react": "^11.4.0",
     "@emotion/styled": "^11.3.0",
@@ -88,7 +87,6 @@
     "babel-loader": "^8.2.5",
     "babel-plugin-istanbul": "^6.1.1",
     "babel-plugin-react-native-web": "^0.18.7",
-    "commitlint": "^17.0.2",
     "eslint": "^8.4.1",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
@@ -124,11 +122,6 @@
     "expo-linear-gradient": "~11.3.0",
     "react": "*",
     "react-native": "*"
-  },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
   },
   "release-it": {
     "git": {
