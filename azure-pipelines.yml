@@ -29,11 +29,6 @@ stages:
       is_docker: false
       language: javascript
 
-  - template: azure-templates/frontend-deploy-stage.yml@templates
-    parameters:
-      short_name: "tuteria/v2/tutor-frontend-app/mobile-storybook"
-      tag: $(Build.BuildId)
-  
   - template: azure-templates/code-analysis.yml@templates
     parameters:
       stage_description: Analyze code
@@ -45,4 +40,11 @@ stages:
       test_container: api-ci
       sonar_project_key: "FutureSchoolHQ_fs-mobile-component-library"
       sonar_project_name: "fs-mobile-component-library"
+      sonar_organization: "future-school-hq"
+
+  - template: azure-templates/frontend-deploy-stage.yml@templates
+    parameters:
+      short_name: "tuteria/v2/tutor-frontend-app/mobile-storybook"
+      tag: $(Build.BuildId)
+  
 
