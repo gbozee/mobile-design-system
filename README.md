@@ -1,15 +1,15 @@
-# @tuteria/mobile-components
+# @gbozee/mobile-components
 Primitives components for building mobile applications.
 ## Installation
 
 ```sh
-npm install @tuteria/mobile-components
+npm install @gbozee/mobile-components
 ```
 
 ## Usage
 
 ```js
-import { multiply } from "@tuteria/mobile-components";
+import { multiply } from "@gbozee/mobile-components";
 
 // ...
 
