@@ -10,6 +10,9 @@ module.exports = {
     '@storybook/addon-interactions',
     {
       name: '@storybook/addon-react-native-web',
+      // options: {
+      //   modulesToTranspile: ['react-native-reanimated'],
+      // },
     },
   ],
   framework: '@storybook/react',
